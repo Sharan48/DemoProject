@@ -6,7 +6,7 @@
     <classes>
       <class name="com.mystore.testcases.SearcResultPageTest">
         <methods>
-          <include name="searchProductAvailabilityTest"/>
+          <include name="searchProductAvailabilityTest" invocation-numbers="0"/>
           <include name="launchWebPage"/>
           <include name="logOutToApp"/>
           <include name="ExtendeReportFlush"/>
