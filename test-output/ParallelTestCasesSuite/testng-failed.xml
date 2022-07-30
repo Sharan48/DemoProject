@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ParallelTestCasesSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="com.mystore.testcases.IndexPageTest">
+        <methods>
+          <include name="launchWebPage"/>
+          <include name="logOutToApp"/>
+          <include name="verifyTitle"/>
+          <include name="ExtendeReportFlush"/>
+          <include name="ExtendReportGenerate"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.IndexPageTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <classes>
+      <class name="com.mystore.testcases.SearcResultPageTest">
+        <methods>
+          <include name="searchProductAvailabilityTest"/>
+          <include name="launchWebPage"/>
+          <include name="logOutToApp"/>
+          <include name="ExtendeReportFlush"/>
+          <include name="ExtendReportGenerate"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.SearcResultPageTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [ParallelTestCasesSuite] -->
