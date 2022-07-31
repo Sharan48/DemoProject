@@ -35,7 +35,7 @@ public class IndexPageTest extends Baseclass
 		indexpage=new IndexPage();
 		String actualTitle = indexpage.getMyStoreTitle();
 
-		Assert.assertEquals(actualTitle, "My Store");
+		Assert.assertEquals(actualTitle, "Store");
 
 
 	}

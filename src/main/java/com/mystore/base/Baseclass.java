@@ -43,15 +43,15 @@ public class Baseclass {
 		ExtentManager.setExtent();
 	}
 
-	@Parameters("browser")
+	//	@Parameters("browser")
 	@BeforeMethod(groups = { "Smoketest", "Integrstiontest"} )
-	public void launchWebPage(String browser) throws IOException {
+	public void launchWebPage() throws IOException {
 
 
 		FileInputStream file=new FileInputStream( "C:\\Users\\Asus\\eclipse-workspace2\\DemoProject\\Configuration\\Config.properties");
 
 		property=new Properties(); property.load(file); 
-		//		   String browser = property.getProperty("browser"); 
+		String browser = property.getProperty("browser"); 
 		String url = property.getProperty("url");
 
 		if(browser.equalsIgnoreCase("chrome")) {

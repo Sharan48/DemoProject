@@ -76,7 +76,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<suiteXmlFile>Compatibilitytestng.xml</suiteXmlFile>
+						
 						<suiteXmlFile>Extenttestng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
